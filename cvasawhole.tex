@@ -1,0 +1,368 @@
+
+\documentclass{exam}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{natbib}
+\usepackage{bibentry} 
+\usepackage{ragged2e}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\ResumeItem}[1]{
+  \item\small\justifying{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\ResumePublicationItem}[1]{
+  \item\small\justifying
+    #1
+}
+
+\newcommand{\resumeItem}{\ResumeItem}
+\newcommand{\Resumeitem}{\ResumeItem}
+\newcommand{\resumeitem}{\ResumeItem}
+\newcommand{\resumeSubheading}{\ResumeSubheadingBNII}
+\newcommand{\resumesubheading}{\ResumeSubHeadingBNII}
+\newcommand{\Resumesubheading}{\ResumeSubHeadingBNII}
+
+
+\newcommand{\ResumeSubheadingBNII}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\justifying#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingBI}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingNN}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\ResumeSubheadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\ResumeSubheadingListEnd}{\end{itemize}}
+\newcommand{\ResumeItemListStart}{\begin{itemize}}
+\newcommand{\ResumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\Jan}{January }
+\newcommand{\Feb}{February }
+\newcommand{\Mar}{March }
+\newcommand{\Apr}{April }
+\newcommand{\May}{May }
+\newcommand{\Jun}{June }
+\newcommand{\Jul}{July }
+\newcommand{\Aug}{August }
+\newcommand{\Sept}{September }
+\newcommand{\Oct}{October }
+\newcommand{\Nov}{November }
+\newcommand{\Dec}{December }
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+
+
+%----------HEADING----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % color of internal links
+    citecolor=black, % color of links to bibliography
+    filecolor=black, % color of file links
+    urlcolor=black   % color of external links
+}
+
+\begin{center}
+	\textbf{\Huge \scshape Zhichuan MA} \\ \vspace{1pt}
+	\small Tel:(86)152 6751 8001 $|$ \href{mailto:zhichuan.ma@polytechnique.edu }{zhichuan.ma@polytechnique.edu } $|$ Louvain-la-Neuve, BE $|$ \href{https://zhichuanma.github.io/}{https://zhichuanma.github.io/}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\ResumeSubheadingListStart
+\ResumeSubheadingBNII
+{Ecole Polytechnique}{Paris, France}
+{Master of Energy Environment: Science Technology and Management}
+{Sept. 2022  - Now}
+\ResumeItemListStart
+\ResumeItem{GPA:  3.77/4.00}
+\ResumeItem{Major Courses: Thermodynamics, Machine Learning, Optimization, Modelling}
+\ResumeItemListEnd
+
+\ResumeSubheadingBNII
+{EPFL}{Laussanne, Switzerland}
+{Exchange Student in Industrial Process and Energy Systems Engineering}
+{March. 2023  - Spet. 2023}
+\ResumeItemListStart
+\ResumeItem{GPA:  4.00/4.00}
+\ResumeItem{Major Courses: Modelling, Optimization, Design and Analysis of Integrated Energy Systems}
+\ResumeItemListEnd
+
+\ResumeSubheadingBNII
+{Zhejiang University}{Hangzhou, China}
+{B.Eng. in Energy and Environment System Engineering, Chu Kochen Honors College}{Sept. 2019 - Jun. 2023}
+\ResumeItemListStart
+\ResumeItem{GPA: 3.54/4.00}
+\ResumeItem{{Major Courses:} Engineering Fluid Mechanics (92/100), Partial Differential Equations (92/100), Complex Function and Integral Transformation (92/100), Numerical Calculation Method (89/100), Theory and Practice of Big Data Analysis of Energy System (88/100) }
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+
+%--------publication
+
+\section{Publications}
+\ResumeSubheadingListStart
+\ResumeSubheadingBI{Master Thesis}{}
+\ResumeItemListStart
+\ResumeItem{\textbf{MA, Zhichuan} \href{https://infoscience.epfl.ch/entities/publication/f07b1029-e784-4db2-a971-062ead30419e}{Estimating Future Costs and Carbon Footprints of PEMEC and SOEC Manufacturing}}
+\ResumeItemListEnd
+\ResumeSubheadingBI{National Patent}{}
+\ResumeItemListStart
+\ResumeItem{ \href{https://patents.google.com/patent/CN113073047A/en}{Turbulent flow type reaction kettle and method for producing methane} CN113073047A}
+\ResumeItem{ \href{https://patents.google.com/patent/CN113234590A/en}{Biogas preparation device and method} CN113234590A}
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+%-----------EXPERIENCE-----------
+
+
+
+\section{Research Experience}
+
+\ResumeSubheadingListStart
+
+
+\ResumeSubheadingBNII
+{Multi-criteria Analysis based on Life-cycle Assessment of a Positive Energy District}
+{\textbf{UCLouvain, Belgium}}
+{\href{https://uclouvain.be/en/research-institutes/immc}{IMMC}, supervised by: \href{https://uclouvain.be/en/directories/herve.jeanmart}{Prof. Hervé Jeanmart}}
+{Mar. 2024 – Sept. 2024}
+\ResumeItemListStart
+\ResumeItem{\textbf{LCA Framework Integration:} Integrated the LCA framework of the energy system optimization model Energyscope into the REHO energy system model, which makes the LCA results more reliable and enables more comprehensive multi-objective optimization.}
+\ResumeItem{\textbf{LCA Database Creation:} Built a life cycle assessment database covering 30 environmental impacts in resource extraction, operation and construction processes for all technologies in REHO, based on the Ecoinvent database and combined with the World IMPACT+ method.}
+\ResumeItem{\textbf{Double Counting Removal:} Ensured data accuracy by removing double counting for precise LCA outcomes.}
+\ResumeItem{\textbf{Comprehensive LCA:} Modified constraints and objective functions in REHO to align with the new methodology from Energyscope, introducing multiple LCA indicators makes optimization more comprehensive. Optimized using Dantzig-Wolfe decomposition, decomposing a district optimization problem into one master problem and a series of sub-problems (building optimization).}
+\ResumeItem{\textbf{Generalization and Normalization of LCA Indicators:} Applied a consistent methodology to compare results from two different energy system models. Normalized 27 environmental impact indicators and integrated them into the model for multi-objective optimization.}
+\ResumeItemListEnd
+
+\ResumeSubheadingBNII
+{Carbon Footprints and Cost Evolution of Green Technologies}
+{\textbf{EPFL, Switzerland}}
+{\href{https://www.epfl.ch/labs/ipese/}{IPESE}, supervised by: \href{https://people.epfl.ch/francois.marechal}{Prof. François Maréchal}}
+{Mar. 2023 - Sept. 2023}
+\ResumeItemListStart
+\ResumeItem{\textbf{Research:} Conducted Life Cycle Assessment of green hydrogen electrolysis production.}
+\ResumeItem{\textbf{Cost and Environmental Impacts Analysis:} Merged life cycle assessment and cost methodologies to create a model evaluating the cost and carbon footprint of PEMEC and SOEC manufacturing.}
+\ResumeItem{\textbf{Model Development:} Created a novel, bottom-up model that concurrently assesses and compares the economic and environmental impacts of electrolysis cell manufacturing processes.}
+\ResumeItem{\textbf{Scaling Effect Exploration:} Provided insight into the scalability of PEMEC and SOEC technologies by analyzing their cost and carbon footprint dynamics at varied manufacturing capacities.}
+\ResumeItem{\textbf{Internship Reports:} \href{https://infoscience.epfl.ch/record/305979?&ln=en}{Estimating Future Costs and Carbon Footprints of PEMEC and SOEC Manufacturing}.}
+\ResumeItemListEnd
+
+\ResumeSubheadingBNII
+{Low-temp Conversion of Polystyrene Waste for Hydrogen Production}
+{\textbf{Zhejiang University, China}}
+{\href{http://www.itpe.zju.edu.cn/itpe_en/index.asp}{ITPE}, supervised by: \href{https://person.zju.edu.cn/en/shurong}{Prof. Shurong Wang}}
+{Sept. 2021 - May. 2022}
+\ResumeItemListStart
+\ResumeItem{\textbf{Hydrogen Production Methodology:} Utilized a two-step method for hydrogen production through the hydrothermal directional depolymerization (less than 250°C) and liquid phase reforming (less than 260°C) of polystyrene.}
+\ResumeItem{\textbf{Catalyst Preparation:}  Led the development and synthesis of hydrothermal oxidation catalysts aimed at improving the selectivity for small molecule acids, such as acetic and formic acid, within the liquid phase. This work focused on optimizing catalyst properties to enhance efficiency in liquid-phase reforming for hydrogen production.}
+\ResumeItem{\textbf{Extension:} Undertook preliminary efforts to extrapolate the established methodology to other oxygenated olefins, notably lignin, to explore its applicability and efficiency across diverse materials.}
+\ResumeItemListEnd
+
+\ResumeSubheadingBNII
+{Enhanced Methane Production Device with New Electrode Material}
+{\textbf{Zhejiang University, China}}
+{\href{http://www.itpe.zju.edu.cn/itpe_en/index.asp}{ITPE}, supervised by: \href{https://person.zju.edu.cn/en/0002008} {Prof. Jun Chen}}
+{Mar. 2021 - Aug. 2021}
+\ResumeItemListStart
+\ResumeItem{\textbf{Design and Material Innovation:} Engaged in designing electrode nano-arrays, integrating novel materials, specifically using ZIF67 nanosheets.}
+\ResumeItem{\textbf{Utilization of Methanogens:}  Employed methanogens with the novel electrode design to facilitate and optimize methane production processes.}
+\ResumeItem{\textbf{Enhanced Methane Production:} Achieved an approximately 35\% increase in methane production compared to traditional methane production methodologies.}
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+%-----------PROJECTS-----------
+\section{Selected Course Projects}
+
+\iffalse
+\ResumeSubheadingListStart
+\ResumeSubheadingBI
+{Artificial Intelligence}
+{}
+\ResumeItemListStart
+\ResumeItem
+{Used 8438 classic Chinese literary excerpts; TF-IDF to count keyword frequencies; sequential model to compute cross-entropy loss. Constructed Adam algorithm optimizer; trained model on GPU with PyTorch to achieve 98.24\% test set accuracy.}
+\ResumeItem
+{Used a 400-image dataset to train MTCNN and MobileNet to recognize mask-wearing and achieved a test accuracy of 92\%.}
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBI
+{Data Mining}
+{}
+\ResumeItemListStart
+\ResumeItem{Analyzed 20,460 house price data using time series analysis, feature distribution histograms, and PCA and K-means clustering. Then used four statistical models (lasso regression, decision tree...)to train and predict the price next year.}
+
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+\fi
+
+
+\ResumeSubheadingListStart
+
+\ResumeSubheadingBI
+{Optimization of SOEC system}
+{Ecole Polytechnique}
+\ResumeItemListStart
+\ResumeItem{PHY657 Building and Using Models for the Energy Transition Course Project}
+\ResumeItem{Built an MILP model based on a reversible SOEC/SOFC system and predicted its charge/discharge status with the real-time electricity price data, giving an optimal configuration of the whole system.}
+\ResumeItem{\href{https://github.com/zhichuanma/PHY657-Project}{[Github link]}}
+\ResumeItemListEnd
+
+\ResumeSubheadingBI
+{Weather Prediction by Machine Learning based on Historical Data}
+{Ecole Polytechnique}
+\ResumeItemListStart
+\ResumeItem{MEC557 Apprentissage Automatique pour le climat et l"énérgie Course Project}
+\ResumeItem{Predicted Paris weather data through machine learning methods, by the use of weather datas from other 4 European cities.}
+\ResumeItem{\href{https://github.com/VTNay/MEC557-Project/blob/main/MEC557_Weather.ipynb}{[Github link]}}
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+%-----------Scholarship and Rewards-----------
+\section{Scholarship \& Awards}
+The National 2nd Prize of National Energy Conservation and Emission Reduction Competition Honored by China Ministry of Education
+\hfill {\em Aug. 2022}\\
+The National 1st Prize of 3060 Green Point Design Innovation Competition Honored by State Grid Zhejiang Integrated Energy Services Co., Ltd
+\hfill {\em Oct. 2022}\\
+
+SEMG Scholarship Honored by EPFL
+\hfill {\em Mar. 2023}\\
+Certificate of Chu Kochen Honors Program by Zhejiang University
+\hfill {\em Jun. 2023}\\
+Qingshan Scholarship Honored by Zhejiang University
+\hfill {\em Aug. 2023}\\
+EDF Corporate Scholarships Honored by EDF
+\hfill {\em Dec. 2023}\\
+
+'Erasmus+' Scholarship Honored by Ecole Polytechnique
+\hfill {\em Apr. 2024}\\
+\iffalse
+
+\section{Extracurricular Experience}
+\ResumeSubheadingListStart
+\ResumeSubheadingBI{Volunteering}{}
+\ResumeItemListStart
+\ResumeItem{Overall service of \textbf{327} hours earned the highest distinction of Five-Star Volunteer.}
+\ResumeItem{Led a team to educate 20+ impoverished youngsters in Shaanxi Province to admission to prominent universities for 3 years.}
+\ResumeItem{Advertised and sold agricultural goods in Lvliang underprivileged County using webcast, sales reached 100 thousand RMB.}
+
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+\fi
+
+
+\section{Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
+        
+    Programming Languages: \ & C, Python, AMPL, MATLAB, R, LaTeX.\\
+    Technical Skills: \ & Energy System Modeling, LCA, Optimization, MILP. \\
+    Software \& Techniques: \ &  AMPL, Jupyter Notebook, Brightway, Ecoinvent, Git, Origin.\\
+    Languages: \ & Chinese (Native), English (TOEFL 101), French (A2)
+    \end{tabular}
+
+
+
+
+\end{document}
