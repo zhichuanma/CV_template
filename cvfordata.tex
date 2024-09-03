@@ -1,0 +1,307 @@
+% To do: 
+% 1. Add github link
+
+\documentclass{exam}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{natbib}
+\usepackage{bibentry} 
+\usepackage{ragged2e}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\ResumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\ResumePublicationItem}[1]{
+  \item\small\justifying
+    #1
+}
+
+\newcommand{\resumeItem}{\ResumeItem}
+\newcommand{\Resumeitem}{\ResumeItem}
+\newcommand{\resumeitem}{\ResumeItem}
+\newcommand{\resumeSubheading}{\ResumeSubheadingBNII}
+\newcommand{\resumesubheading}{\ResumeSubHeadingBNII}
+\newcommand{\Resumesubheading}{\ResumeSubHeadingBNII}
+
+% Eduaction Format
+\newcommand{\ResumeSubheadingBNII}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Work Experience Format
+\newcommand{\ResumeSubheadingBNIII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Project Format
+\newcommand{\ResumeSubheadingBI}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{ #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\ResumeSubheadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\ResumeSubheadingListEnd}{\end{itemize}}
+\newcommand{\ResumeItemListStart}{\begin{itemize}}
+\newcommand{\ResumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\Jan}{January }
+\newcommand{\Feb}{February }
+\newcommand{\Mar}{March }
+\newcommand{\Apr}{April }
+\newcommand{\May}{May }
+\newcommand{\Jun}{June }
+\newcommand{\Jul}{July }
+\newcommand{\Aug}{August }
+\newcommand{\Sept}{September }
+\newcommand{\Oct}{October }
+\newcommand{\Nov}{November }
+\newcommand{\Dec}{December }
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+
+
+%----------HEADING----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % color of internal links
+    citecolor=black, % color of links to bibliography
+    filecolor=black, % color of file links
+    urlcolor=black   % color of external links
+}
+
+
+\begin{center}
+	\textbf{\huge \scshape Lucas(Xuanzhang) LIU} \\ \vspace{1pt}
+	\small (404) 263-7022  $|$
+        \href{mailto:xuanzhangliu@gatech.edu}
+        {\textbf{xuanzhangliu@gatech.edu}} $|$
+        Atlanta, GA $|$
+        \href{https://linkedin.com/in/xuanzhangliu}
+        {\textbf{LinkedIn} 
+        \iffalse \textbf{linkedin.com/in/xuanzhangliu}\fi}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNII
+{Georgia Institute of Technology}{Atlanta, USA}
+{Master of Science in Computer Science }
+{Aug. 2023  - May 2025 (Expected)}
+\ResumeItemListStart
+\ResumeItem{GPA:  4.0/4.0}
+\ResumeItem{Core Coursework: Machine Learning, Natural Language Processing, Simulation, Cloud Computing}
+\ResumeItemListEnd
+
+\ResumeSubheadingBNII
+{Zhejiang University}{Hangzhou, China}
+{B.E. Energy and Environmental Systems Engineering, Chu Kochen Honors Degree}{Sep. 2019 - Jun. 2023}
+\ResumeItemListStart
+\ResumeItem{Core Coursework: Artificial Intelligence, Databases, Data Structure, Probability and Statistics}
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+
+
+
+
+%-----------SKILLS-----------
+\section{Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
+    
+    Programming Languages: \ & Python, SQL, R, C, MATLAB\\
+    Machine Learning \& AI: \ & PyTorch, Tensorflow, Keras, Scikit-learn, Optuna \\
+    Data Analysis \& Visualization: \ & Pandas, NumPy, PyMC3, A/B testing, PowerBI, Tableau\\
+    Data Engineering: \ & ETL Process, Spark, Web Scraping, AirFlow \\
+    Tools \& Platforms: \ &  Git, Docker, Jupyter Notebook, AWS, Selenium, LaTeX, Microsoft Office
+    \end{tabular}
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNIII
+{\textbf{Data Analyst} | \textit{NIO Inc.}}
+{\textit{Feb. 2023 - Jun. 2023}}
+\ResumeItemListStart
+\ResumeItem{
+   \textbf{Optimization of EV Charging Station Utilization and Revenue through Predictive Analytics}
+  \begin{itemize}
+    \item[--] Employed time series \textbf{ARIMA} and \textbf{Regression Analysis} techniques for forecasting demand and electricity costs.
+    \item[--] Designed and executed \textbf{A/B testing} to evaluate the effectiveness of a dynamic pricing model, which adjusts charges during peak and off-peak hours, leading to more data-informed pricing strategies.
+    \item[--] Achieved a \textbf{5.6\%} increase in station utilization and a \textbf{3.5\%} rise in revenue through predictive analytics-driven strategies.
+  \end{itemize}
+}
+\ResumeItem{
+  \textbf{Data-Driven Optimization of Battery Swapping Stations based on User Behavior}
+  \begin{itemize}
+    \item[--] Extracted battery swapping data from different sources by \textbf{Spark} and utilized \textbf{PyMC3} for Bayesian \textbf{statistics} and Poisson distribution \textbf{modeling} to analyze peak usage times and conducted EDA for behavioral insights.
+    \item[--] Applied \textbf{Maximum Likelihood Estimation} for traffic forecasting and conducted \textbf{Welch t-test} to assess session length variations, informing operational adjustments.
+    \item[--] Achieved a \textbf{4.2\%} boost in customer service efficiency through strategic adjustments on station management.
+  \end{itemize}
+}
+\ResumeItemListEnd
+
+
+\ResumeSubheadingBNIII
+{\textbf{Research Assistant} | \textit{Energy X Lab (Zhejiang University)}}
+{\textit{Jul. 2021 - Jun. 2022}}
+\ResumeItemListStart
+\ResumeItem{Proposed a hierarchical, \textbf{distributed optimal control framework} for HVAC systems, utilizing a \textbf{Multi-Agent System} architecture and optimizing the Alternating Direction Method of Multipliers \textbf{optimization algorithm} with Nesterov acceleration for enhanced efficiency and performance.}
+
+\ResumeItem{Achieved a \textbf{5.33\%} reduction in energy usage and a significant \textbf{69.55\%} decrease in computation time, with a refereed journal article "A general multi agent-based distributed framework for optimal control of building HVAC systems" \textbf{published}. }
+
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\ResumeSubheadingListStart
+
+\ResumeSubheadingBI
+{U.S. Power Outage Data ETL}
+{Jan. 2024 - Now}
+\ResumeItemListStart
+
+\ResumeItem{Spearheaded the development of an automated \textbf{ETL} pipeline, utilizing \textbf{AWS Lambda} for serverless execution, enhanced with \textbf{Docker}-created Lambda Layers, and \textbf{Selenium WebDriver} for web scraping of utility power outage data at 15-minute intervals. Collaborated closely with data analysts to define data schemas and stored data in \textbf{Amazon S3}.}
+
+\ResumeItem{Implemented \textbf{data quality and integrity checks} within the ETL pipeline and utilized \textbf{Pandas} for data transformation and cleansing, enabling automated detection and correction of discrepancies and outliers.}
+
+\ResumeItem{Optimized web scraping framework for cloud execution, achieved a dramatic reduction in processing time by average \textbf{75\%} and a marked decrease in AWS operational costs \textbf{(\$100/month to \$20/month)}.}
+
+
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBI
+{Sleep States Detection}
+{Oct. 2023 - Dec. 2023}
+\ResumeItemListStart
+\ResumeItem{Orchestrated the processing of \textbf{127.9 million pieces} of accelerometer data, employed \textbf{Polars} for its exceptional data handling capabilities and \textbf{Apache Spark} for distributed scalable data processing and analysis.}
+\ResumeItem{Directed a team to compare and refine \textbf{machine learning} and \textbf{deep learning} models in \textbf{PyTorch}, for predicting sleep stages. Achieved an exceptional increase in prediction accuracy to \textbf{65\%} from 20-30\%, while uncovering the strength of different models handling time-series sequential data.}
+\ResumeItemListEnd
+
+% Idea from Paper 'Developing a hybrid time-series artificial intelligence model to forecast energy use in buildings'
+\ResumeSubheadingBI
+{Quantitative Bitcoin Trading Strategy Design (Group Project)}
+{Feb. 2022 - Apr. 2022}
+\ResumeItemListStart
+
+\ResumeItem{Directed a multidisciplinary team to excellence in the Mathematical Modeling Contest, crafting an innovative quantitative Bitcoin trading strategy. Leveraged advanced \textbf{machine learning} models for bitcoin \& gold price prediction and employed \textbf{Shapley Value} for result interpretation. Pioneered a robust \textbf{Linear Programming} trade model ensured by \textbf{Granger Causality Test}.}
+\ResumeItem{Championed the advanced use of \textbf{DDPG Reinforcement Learning}, steering the team to secure a Meritorious Winner rank (\textbf{Top 7\% globally}) in the competition.}
+\ResumeItemListEnd
+
+
+
+
+
+
+\ResumeSubheadingListEnd
+
+\end{document}

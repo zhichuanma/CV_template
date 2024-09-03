@@ -1,0 +1,382 @@
+
+% To do: 
+% 1. Add github link
+
+\documentclass[10pt]{exam}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{natbib}
+\usepackage{bibentry} 
+\usepackage{ragged2e}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+%----URL style----
+\urlstyle{same}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\ResumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\ResumePublicationItem}[1]{
+  \item\small\justifying
+    #1
+}
+
+\newcommand{\resumeItem}{\ResumeItem}
+\newcommand{\Resumeitem}{\ResumeItem}
+\newcommand{\resumeitem}{\ResumeItem}
+\newcommand{\resumeSubheading}{\ResumeSubheadingBNII}
+\newcommand{\resumesubheading}{\ResumeSubHeadingBNII}
+\newcommand{\Resumesubheading}{\ResumeSubHeadingBNII}
+
+% Eduaction Format
+\newcommand{\ResumeSubheadingBNII}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\textit{#2}} \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Work Experience Format
+\newcommand{\ResumeSubheadingBNIII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Project Format
+\newcommand{\ResumeSubheadingBI}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{ #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\ResumeSubheadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\ResumeSubheadingListEnd}{\end{itemize}}
+\newcommand{\ResumeItemListStart}{\begin{itemize}}
+\newcommand{\ResumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\Jan}{January }
+\newcommand{\Feb}{February }
+\newcommand{\Mar}{March }
+\newcommand{\Apr}{April }
+\newcommand{\May}{May }
+\newcommand{\Jun}{June }
+\newcommand{\Jul}{July }
+\newcommand{\Aug}{August }
+\newcommand{\Sept}{September }
+\newcommand{\Oct}{October }
+\newcommand{\Nov}{November }
+\newcommand{\Dec}{December }
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+
+
+%----------HEADING----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % color of internal links
+    citecolor=black, % color of links to bibliography
+    filecolor=black, % color of file links
+    urlcolor=black   % color of external links
+}
+
+
+\begin{center}
+	\textbf{\huge \scshape Xuanzhang(Lucas) LIU} \\ \vspace{1pt}
+	\small (404) 263-7022 $|$
+        \href{mailto:xuanzhangliu@gatech.edu}
+        {\textbf{xuanzhangliu@gatech.edu}} $|$
+        Atlanta, GA $|$
+        \href{https://linkedin.com/in/xuanzhangliu}
+        {\textbf{LinkedIn} 
+        \iffalse \textbf{linkedin.com/in/xuanzhangliu}\fi}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNII
+{Georgia Institute of Technology}{Atlanta, GA}
+{M.S. Computer Science  - GPA: 4.0/4.0}
+{Aug 2023  - May 2026(Expected)}
+
+\ResumeSubheadingBNII
+{Zhejiang University}{Hangzhou, CN}
+{B.E. Systems Engineering - Chu Kochen Honors Degree (Top 1\%)}{Sep 2019 - Jun 2023}
+\ResumeItemListEnd
+
+
+
+
+
+
+%-----------SKILLS-----------
+\section{\textbf{Skills}}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
+    
+    Programming Languages: \ & Python, Java, SQL, R, C++/C, JavaScript\\
+    Frameworks \& Libraries: \ & SprirngBoot, Flask, React, LlamaIndex, Hugging Face, PyTorch, Scikit-learn \\
+    Databases \& Cloud Services: \ & MongoDB, Pinecone, AWS (EC2, S3), Spark\\
+    DevOps \& Data Processing: \ &  Docker, Git, CI/CD, Web Scraping
+    \end{tabular}
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Internship Experience}}
+
+\ResumeSubheadingListStart
+
+
+
+\ResumeSubheadingBNII
+{Alibaba Group}
+{Hangzhou, CN}
+{Software \& Data Engineer Intern}
+{Jul 2024 - Sep 2024}
+\ResumeItemListStart
+\ResumeItem{
+Led the design and development of the 1688 advertising platform's backend, enhancing ad targeting through advanced data analysis and modeling.
+}
+\ResumeItem{Refactored projects using Java, Spring Boot, and MyBatis, reducing system coupling and enhancing maintainability.
+}
+\ResumeItem{
+Engineered ETL pipelines with SQL and Python, resulting in a 30\% boost in data loading performance and streamlined data cleaning processes.
+}
+
+\ResumeItem{Integrated microservices architecture using HSF and implemented Tair for distributed caching, enhancing system stability and enabling high concurrency with effective RPC and service governance.}
+
+\ResumeItem{Automated deployment and service management with Docker and Kubernetes, improving service reliability. Monitored and visualized system health with Prometheus and Grafana, leading to a 15\% reduction in downtime.}
+
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBNII
+{Desay SV}
+{Singapore, Hybrid}
+{Software Engineer Intern}
+{May 2024 - Jul 2024}
+\ResumeItemListStart
+\ResumeItem{
+    Developed a \textbf{Flask} RESTful API backend, integrating \textbf{MongoDB} for chat history and \textbf{Pinecone} for vector embeddings. Optimized the 7B model using \textbf{TensorRT} to enhance performance on resource-constrained systems.
+}
+\ResumeItem{
+    Built a responsive \textbf{React} frontend and deployed the application on \textbf{AWS} with Docker and GitHub Actions for CI/CD. Integrated real-time updated knowledge sources and designed a scalable RAG server with \textbf{LlamaIndex}.
+}
+\ResumeItem{
+    Improved chatbot accuracy and efficiency using advanced agents and optimization techniques, reducing input prompt size by \textbf{50\%}. Implemented security measures to prevent abuse and ensure responsible API usage.
+}
+
+\ResumeItemListEnd
+
+% stream generating
+% backend
+% UI Design
+
+
+\ResumeSubheadingBNII
+{NIO Energy Co.}
+{Shanghai, CN}
+{Data Analyst Intern}
+{Feb 2023 - Jun 2023}
+\ResumeItemListStart
+\ResumeItem{
+    Conducted Time Series Analysis on 80 million dataset using \textbf{Python} and \textbf{Spark}, tested the novel pricing strategy by \textbf{A/B testing}, and achieved a \textbf{18.6\%} increase in station utilization and \textbf{21.5\%} rise in revenue.
+}
+\ResumeItem{
+    Extracted battery swapping order data using \textbf{SQL}, utilized \textbf{hypothesis test} to evaluate the effectiveness of improved battery inventory strategies designed with Engineering team, and achieved a \textbf{24.2\%} boost in process efficiency.
+}
+\ResumeItemListEnd
+
+
+% \ResumeSubheadingBNII
+% {Georgia Institute of Technology}
+% {Atlanta, GA}
+% {NLP Research Assistant}
+% {Feb 2024 - Apr 2024}
+% \ResumeItemListStart
+% \ResumeItem{Developed a dynamic budget allocation system to optimize ad spend across channels, enhancing ROI efficiency by 22\%.}
+% \ResumeItem{Spearheaded SQL and Python-based enhancements, reducing data processing time by 65\%.}
+% \ResumeItem{Implemented Kafka for real-time task updates and Redis for improved response times and data efficiency.}
+% \ResumeItem{Adopted a microservices architecture and deployed using Docker and Kubernetes, with system monitoring integrated via Prometheus and Grafana for optimized performance.}
+% \ResumeItem{Led a modular redesign of the task system using Spring Boot and Kafka, enhancing scalability and system reliability.}
+
+% \ResumeItemListEnd
+
+% \ResumeSubheadingBNIII
+% {\textbf{Research Assistant} | \textit{Energy X Lab (Zhejiang University)}}
+% {\textit{Jul. 2021 - Jun. 2022}}
+% \ResumeItemListStart
+% \ResumeItem{
+%     \textbf{Distributed optimization framework of HVAC system}
+%     \begin{itemize}
+%     \item[--] Proposed a hierarchical, distributed optimal control framework for HVAC systems, utilizing a \textbf{Multi-Agent} architecture and \textbf{ADMM algorithm} to transform complex engineering problems into programmable \textbf{optimization} problems.
+%     \item[--] Achieved a \textbf{5.33\%} reduction in energy usage and a \textbf{69.55\%} decrease in computation time, with a refereed journal article "A general multi-agent-based distributed framework for optimal control of building HVAC systems" \textbf{published}.
+%     \end{itemize}
+% }
+% \ResumeItemListEnd
+
+
+
+
+\ResumeSubheadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+
+\ResumeSubheadingListStart
+
+% \ResumeSubheadingBI
+% {U.S. Power Outage Data Extract, Transform, Load Pipeline}
+% {Jan 2024 - Apr 2024}
+% \ResumeItemListStart
+
+% \ResumeItem{Developed an automated \textbf{ETL} pipeline to acquire outage data from 986 power utilities. Utilized \textbf{AWS} and Selenium WebDriver for web scraping at 15-minute intervals.}
+
+% \ResumeItem{Utilized \textbf{Pandas} to transform the data to implement data quality and integrity checks within the ETL pipeline.}
+
+% \ResumeItem{Optimized cloud-executed web scraping framework in multiple ways, reduced processing time by \textbf{75\%} and lowering AWS costs by \textbf{80\%} per month.}
+
+% \ResumeItemListEnd
+
+\ResumeSubheadingBI
+{Deep Learning for Sleep States Detection}
+{Oct 2023 - Dec 2023}
+\ResumeItemListStart
+\ResumeItem{Led a team to compare Random Forest, XGBoost and BiGRU models with \textbf{PyTorch} to predict sleep stages, increased accuracy by \textbf{48\%}, and discovered the insight of different models handling time-series sequential data.}
+\ResumeItem{Utilized \textbf{Pandas} to transform the data to implement data quality and integrity checks within the ETL pipeline.}
+\ResumeItem{Designed several RAM-friendly data-loading strategies to efficiently process \textbf{128 million} pieces of accelerometer data, reduced memory usage by over \textbf{60\%}.}
+\ResumeItemListEnd
+
+
+\ResumeSubheadingBI
+{BuzzDB - Advanced Cpp database implementation}
+{Sep 2023 - Dec 2023}
+\ResumeItemListStart
+\ResumeItem{Developed a concurrent buffer manager with 2Q strategy, including page ID handling and page-locking operations.}
+\ResumeItem{Combined buffer management with C++ templating, ensuring dynamic adaptability while emphasizing compile-time efficiency and node resolution without direct pointers.}
+\ResumeItem{Implemented a robust B+-Tree index, incorporating key functions like lookup, insert, and erase, etc.}
+\ResumeItem{Utilized CMake for building within a Docker Linux environment and performed memory checks using Valgrind.}
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBI
+{Video Streaming System(Java + Python)}
+{Nov 2023 - Jan 2024}
+\ResumeItemListStart
+\ResumeItem{Developed back-end functionalities using Java and SpringBoot, while employing Python for the recall and sorting modules.}
+\ResumeItem{Built video uploading, playback, liking, and favoriting functions utilizing FastDFS as the file server.}
+\ResumeItem{Leveraged collaborative filtering and deep learning techniques to achieve multi-channel recall, resulting in accuracy of 74\%.}
+\ResumeItem{Designed a hybrid ranking model by leveraging TensorFlow and Keras, resulting in a top-10 accuracy of 77\%.}
+\ResumeItemListEnd
+
+% Idea from Paper 'Developing a hybrid time-series artificial intelligence model to forecast energy use in buildings'
+% \ResumeSubheadingBI
+% {Mathematical Modeling for Bitcoin Trading Strategy Design}
+% {Feb 2022 - Mar 2022}
+% \ResumeItemListStart
+
+% \ResumeItem{Directed a multidisciplinary team in the Mathematical Modeling Contest, leveraged hybrid \textbf{Linear Regression} and \textbf{XGBoost} models for bitcoin \& gold price prediction with \textbf{89\%} accuracy and Shapley Value for feature interpretation.}
+% \ResumeItem{Utilized Linear Programming and \textbf{Reinforcement Learning} to build a robust trade model, and formed quantitative Bitcoin trading strategy, championed Meritorious Winner (\textbf{7\%}) among all candidates globally.}
+% \ResumeItemListEnd
+
+
+
+
+
+
+\ResumeSubheadingListEnd
+
+\end{document}

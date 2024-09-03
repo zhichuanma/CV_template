@@ -1,0 +1,323 @@
+
+\documentclass{exam}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{natbib}
+\usepackage{bibentry} 
+\usepackage{ragged2e}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\ResumeItem}[1]{
+  \item\small\justifying{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\ResumePublicationItem}[1]{
+  \item\small\justifying
+    #1
+}
+
+\newcommand{\resumeItem}{\ResumeItem}
+\newcommand{\Resumeitem}{\ResumeItem}
+\newcommand{\resumeitem}{\ResumeItem}
+\newcommand{\resumeSubheading}{\ResumeSubheadingBNII}
+\newcommand{\resumesubheading}{\ResumeSubHeadingBNII}
+\newcommand{\Resumesubheading}{\ResumeSubHeadingBNII}
+
+
+\newcommand{\ResumeSubheadingBNII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\justifying#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingBNIIII}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{\justifying#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingBI}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingNN}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\ResumeSubheadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\ResumeSubheadingListEnd}{\end{itemize}}
+\newcommand{\ResumeItemListStart}{\begin{itemize}}
+\newcommand{\ResumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\Jan}{January }
+\newcommand{\Feb}{February }
+\newcommand{\Mar}{March }
+\newcommand{\Apr}{April }
+\newcommand{\May}{May }
+\newcommand{\Jun}{June }
+\newcommand{\Jul}{July }
+\newcommand{\Aug}{August }
+\newcommand{\Sept}{September }
+\newcommand{\Oct}{October }
+\newcommand{\Nov}{November }
+\newcommand{\Dec}{December }
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+
+
+%----------HEADING----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % color of internal links
+    citecolor=black, % color of links to bibliography
+    filecolor=black, % color of file links
+    urlcolor=black   % color of external links
+}
+
+\begin{center}
+	\textbf{\Huge \scshape Xuanzhang LIU} \\ \vspace{1pt}
+	\small Tel:(404)263-7022 $|$ \href{mailto:xliu941@gatech.edu }{xuanzhangliu@gatech.edu } $|$ Atlanta, GA $|$ \href{www.linkedin.com/in/xuanzhangliu}{www.linkedin.com/in/xuanzhangliu}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNIIII
+{Georgia Institute of Technology}{Atlanta, USA}
+{Master of Computational Science and Engineering }
+{Aug. 2023  - May 2025 (Expected)}
+\ResumeItemListStart
+\ResumeItem{GPA:  4.0/4.0}
+\ResumeItem{Relevant Coursework: Machine Learning, Natural Language Processing, Simulation}
+\ResumeItemListEnd
+\ResumeSubheadingBNIIII
+{Zhejiang University}{Hangzhou, China}
+{B.Eng. in Energy and Environment System Engineering, Chu Kochen Honors College}{Sept. 2019 - Jun. 2023}
+
+\ResumeItemListStart
+
+\ResumeItem{GPA:  3.7/4.0. Rank: Top 15\%.}
+\ResumeItem{{Major Courses:} Data Structure, Big Data Analysis, Data Mining, Artificial Intelligence, Computer Simulation, Optimization of Practical Algorithms, Mathematical Analysis. }
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+
+%--------publication
+
+\section{Publications}
+\ResumeSubheadingListStart
+\ResumeSubheadingBI{Journal}{}
+\ResumeItemListStart
+\ResumeItem{Wang, Zihao, \textbf{Liu, Xuanzhang}, et al. "A general multi agent-based distributed framework for optimal control of building HVAC systems."  \emph{Journal of Building Engineering} 52 (2022): 104498.}
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+%-----------EXPERIENCE-----------
+
+
+
+\section{Research Experience}
+
+\ResumeSubheadingListStart
+
+\ResumeSubheadingBNII
+{Research on Safe Reinforcement Learning of Interactive driving scene}
+{\textit{DFG Lab}}
+
+\ResumeItemListStart
+\ResumeItem{Designed a reinforcement learning framework with a safety layer for the unprotected left turn scenario}
+\ResumeItem{Introduced attention mechanism to capture the dependencies between self-vehicles and social vehicles in decision-making.}
+\ResumeItem{Evaluated the traffic scenario in SUMO and compared the performance of framework with SOTA.}
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBNII
+{Research on Autonomous Driving Behavior Decision-making and Motion Planning}
+{\textit{Robotics Lab} }
+\ResumeItemListStart
+\ResumeItem{Proposed a hierarchical behavior and motion planning driving method that integrated planning and decision-making layers by utilizing the cost obtained from the sampling-based planning method as the reward for policy learning.}
+\ResumeItem{Utilized PPO as an RL framework to learn stochastic behavior policies; Evaluated the strategy in CARLA, achieving over 95\% success for random targets.}
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBNII
+{Research on Optimization and Control of HVAC Systems and Building Load Data}
+{\textit{EnergyX Lab}}
+
+\ResumeItemListStart
+\ResumeItem{Proposed a hierarchical framework for distributed optimal control of multiple air conditioning units based on the Multi-Agent System and the improved Alternating Direction Method of Multipliers with Nesterov acceleration; Comparing to the conventional method, achieved significant energy savings of 5.33 \% and reduction in computation time of 69.55\%.}
+\ResumeItem{Proposed a Digital Twin and non-sequential Monte Carlo-based method for assessing the reliability of automatic control schemes for data center air conditioning systems.}
+
+
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\ResumeSubheadingListStart
+\ResumeSubheadingBI
+{Sentiment Analysis of Yelp Reviews using NLP Techniques}
+{}
+\ResumeItemListStart
+\ResumeItem
+{Streamlined 600k Yelp reviews through preprocessing in Python with Pandas, Numpy, and NTLK, then applied classifiers like Naive Bayes, SVM and Logistic Regression, acheiving 87.2\% accuracy enhanced by BERT.}
+\ResumeItem
+{Visualized dominant sentiment keywords via word clouds, formulated strategic recommendations for restaurants, and presented findings to over 200 academic audiences.}
+\ResumeItemListEnd
+
+
+
+\ResumeSubheadingBI
+{Sleep States Detection}
+{}
+\ResumeItemListStart
+\ResumeItem{Processed and cleansed 127.9 million time-series data points collected from accelerometers, loaded with Polars, and transformed the data format to speed the loading process. }
+\ResumeItem{Innovatively developed a GRU-UNet network architecture to predict critical time points, enabling accurate detection of sleep onset and wake periods using wrist-worn accelerometer data. Reached 78\% accuracy on the test dataset.}
+
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+
+
+
+
+
+
+%-----------Scholarship and Rewards-----------
+\section{Scholarship \& Awards}
+
+Pilotage Scholarship honored by Chu Kochen College 
+\hfill {\em Nov. 2021}\\
+Meritorious Winner in the 2022 American College Mathematical Modeling Contest (as the team leader) 
+\hfill {\em May 2022}\\
+Innovation Scholarship honored by Chu Kochen College
+\hfill {\em Nov. 2022}\\
+Excellent Graduate of Zhejiang University
+\hfill {\em June 2023}\\
+
+
+
+\iffalse
+
+\section{Extracurricular Experience}
+\ResumeSubheadingListStart
+\ResumeSubheadingBI{Volunteering}{}
+\ResumeItemListStart
+\ResumeItem{Overall service of \textbf{327} hours earned the highest distinction of Five-Star Volunteer.}
+\ResumeItem{Led a team to educate 20+ impoverished youngsters in Shaanxi Province to admission to prominent universities for 3 years.}
+\ResumeItem{Advertised and sold agricultural goods in Lvliang underprivileged County using webcast, sales reached 100 thousand RMB.}
+
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+\fi
+
+
+\section{Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
+        
+    Programming Languages: \ & C++, Python, SQL, Julia, MATLAB, R\\
+    Software: \ & Git, VSCode, PyCharm, Jupyter, LaTex, Docker, AWS, Linux. \\
+    Machine Learning Tools: \ &  NLTK, Numpy, PyTorch, Pandas, Sklearn.
+    \end{tabular}
+
+
+
+
+\end{document}

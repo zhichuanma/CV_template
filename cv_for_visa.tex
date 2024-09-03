@@ -1,0 +1,295 @@
+%-------------------------
+% Resume in Latex
+% Author : Yuhan Tan
+% License : MIT
+%------------------------
+\documentclass{exam}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{natbib}
+\usepackage{bibentry} 
+\usepackage{ragged2e}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\ResumeItem}[1]{
+  \item\small\justifying{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\ResumePublicationItem}[1]{
+  \item\small\justifying
+    #1
+}
+
+\newcommand{\resumeItem}{\ResumeItem}
+\newcommand{\Resumeitem}{\ResumeItem}
+\newcommand{\resumeitem}{\ResumeItem}
+\newcommand{\resumeSubheading}{\ResumeSubheadingBNII}
+\newcommand{\resumesubheading}{\ResumeSubHeadingBNII}
+\newcommand{\Resumesubheading}{\ResumeSubHeadingBNII}
+
+
+\newcommand{\ResumeSubheadingBNII}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\justifying#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingII}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingBI}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\ResumeSubheadingNN}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\ResumeSubheadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\ResumeSubheadingListEnd}{\end{itemize}}
+\newcommand{\ResumeItemListStart}{\begin{itemize}}
+\newcommand{\ResumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\Jan}{January }
+\newcommand{\Feb}{February }
+\newcommand{\Mar}{March }
+\newcommand{\Apr}{April }
+\newcommand{\May}{May }
+\newcommand{\Jun}{June }
+\newcommand{\Jul}{July }
+\newcommand{\Aug}{August }
+\newcommand{\Sept}{September }
+\newcommand{\Oct}{October }
+\newcommand{\Nov}{November }
+\newcommand{\Dec}{December }
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+
+
+%----------HEADING----------
+
+
+\begin{center}
+	\textbf{\Huge \scshape Xuanzhang LIU} \\ \vspace{1pt}
+	\small Tel:(404)263-7022 $|$ \href{mailto:xliu941@gatech.edu }{xliu941@gatech.edu } $|$ Atlanta, GA $|$ \href{www.linkedin.com/in/xuanzhangliu}{www.linkedin.com/in/xuanzhangliu}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNII
+{Georgia Institute of Technology}{Atlanta, GA}
+{Master of Computational Science and Engineering (Electrical and Computer Engineering)}
+{Aug. 2023  - Now}
+
+\ResumeSubheadingBNII
+{Zhejiang University}{Hangzhou, China}
+{Bachelor of Engineering in Energy and Environment Systems Engineering with Honors}{Sept. 2019 - Jun. 2023}
+
+\ResumeItemListStart
+
+\ResumeItem{GPA:  3.71/4.00. Rank: Top 15\%.}
+\ResumeItem{Awards: Meritorious Winner in the American College Mathematical Modeling Contest (team leader), Excellent Graduate of Zhejiang University, Innovation Scholarship}
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Internship}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNII
+{Data Analyst}
+{NIO Power}
+{Supervised by: Dr. Jun Liu}
+{Aug. 2022 - Dec. 2022}
+\ResumeItemListStart
+\ResumeItem{Utilized time series analysis and machine learning algorithms to develop a statistical forecasting model according to over 2 years of historical usage data. Enabled the prediction of energy demands with an accuracy rate of 86.7\%, thereby facilitating decision-making in resource distribution during peak and off-peak periods.}
+\ResumeItem{Utilized deep learning to analyze the NIO electric vehicle owners' charging and battery swapping habits in Shanghai, supported the optimization of energy replenishment infrastructure, successfully increased user satisfaction by 3.78\%.}
+\ResumeItem{Pioneering a strategy that successfully encouraged 10\% of EV owners to synchronize their charging and discharging cycles with off-peak hours. Assisted in the implementation of grid demand response of the State Grid, earned recognition and a grant of 50,000 RMB }
+\ResumeItem{Implemented a live energy monitoring feature within the user interface, providing users with real-time data on their EV's energy consumption, charging status, and grid interaction. Increased user satisfaction by 10.3\%, enhancing overall usability and accessibility.}
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+\ResumeSubheadingListStart
+\ResumeSubheadingBNII
+{Research on Optimization and Control of HVAC Systems and Building Load Data}
+{Zhejiang University}
+{EnergyX Lab Supervised by: Prof. Yang Zhao}
+{Jul. 2020 - Jun. 2022}
+\ResumeItemListStart
+\ResumeItem{Proposed a hierarchical framework for distributed optimal control of multiple air conditioning units based on the Multi-Agent System and the improved Alternating Direction Method of Multipliers with Nesterov acceleration; Comparing to the conventional method, achieved significant energy savings of 5.33 \% and reduction in computation time of 69.55\%.}
+\ResumeItem{Proposed a Digital Twin and non-sequential Monte Carlo-based method for assessing the reliability of automatic control schemes for data center air conditioning systems.}
+\ResumeItem{Utilized Openstudio and SketchUp to generate an open-source dataset containing 800 complex buildings, }
+\ResumeItem{Proposed a novel Clustering Algorithm for buildings to address the data imbalance issue.}
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+
+
+%--------publication
+\section{Publications}
+\ResumeSubheadingListStart
+\ResumeSubheadingBI{Journal}{}
+\ResumeItemListStart
+\ResumeItem{Wang, Zihao, \textbf{Liu, Xuanzhang}, et al. "A general multi agent-based distributed framework for optimal control of building HVAC systems."  \emph{Journal of Building Engineering} 52 (2022): 104498.}
+\ResumeItemListEnd
+\ResumeSubheadingBI{National Patent}{}
+\ResumeItemListStart
+\ResumeItem{Fast ADMM-based distributed optimal control method for variable air volume systems.  CN113028613A}
+\ResumeItem{ Multi agent-based hierarchical distributed optimal control method for central air conditioning systems. CN112923533A}
+\ResumeItem{A digital twin-based approach to data center air conditioning system reliability assessment. CN113722906A}
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Course Projects}
+
+\ResumeSubheadingListStart
+\ResumeSubheadingBI
+{Integrated Energy System Control and optimization}
+{}
+\ResumeItemListStart
+\ResumeItem{Designed optimal control system of a 50MW hybrid renewable energy power generation system in Simscape from scratch.}
+\ResumeItemListEnd
+
+
+\ResumeSubheadingBI
+{Data Mining}
+{}
+\ResumeItemListStart
+\ResumeItem{Analyzed 20,460 house price data using time series analysis, feature distribution histograms, and PCA and K-means clustering. Then used four statistical models (lasso regression, decision tree...) to predict the price next year.}
+\ResumeItemListEnd
+\ResumeSubheadingListEnd
+
+
+ \iffalse
+%-----------PROJECTS-----------
+\section{Technical Strengths \& Projects}
+
+\ResumeItemListStart
+
+\ResumeItem{Utilized \textbf{Tensorflow} and \textbf{PyTorch} to build ResNet  for 92\% accurate classification of lung and colon cancer diseased tissues.}
+\ResumeItem{Cleaned and Analyzed 20216110 pieces of energy data from 
+ASHRAE by \textbf{Pandas}, \textbf{NumPy}, estimated four kinds of energy consumption with 94\% accuracy by \textbf{scikit-learn}, explained the best model using SHAP value, showed the result by \textbf{Seaborn}.}
+\ResumeItem{Constructed EKF-SLAM system and dynamic environment-oriented MCL positioning navigation utilizing \textbf{ROS} and \textbf{C++}.}
+
+\ResumeItemListEnd
+\fi
+
+
+\section{Extracurricular Experience}
+\ResumeSubheadingListStart
+\ResumeSubheadingBI{Volunteering}{}
+\ResumeItemListStart
+\ResumeItem{Overall service of 327 hours earned the highest distinction of Five-Star Volunteer.}
+\ResumeItem{Led a team to educate 20+ impoverished youngsters in Shaanxi Province to admission to prominent universities for 3 years.}
+\ResumeItem{Advertised and sold agricultural goods in Lvliang underprivileged County using webcast, sales reached 100 thousand RMB.}
+
+\ResumeItemListEnd
+
+\ResumeSubheadingListEnd
+
+
+
+\section{Technical Strengths}
+
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
+        
+        Programming Languages: \ & C, C++, Java, Python, SQL,  MATLAB, R, LaTeX.\\
+    \end{tabular}
+
+
+
+\end{document}
